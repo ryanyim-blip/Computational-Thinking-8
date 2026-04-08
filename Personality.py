@@ -14,7 +14,7 @@ elif question1 == "B":
 elif question1 == "C":
     Fear_of_enclosed_spaces += 1
     Fear_of_Spiders_points += 1
-elif question1 == "":
+elif question1 == "" or "yes":
     ("Please type your answer and A, B or C")
 question2 = input("would you rather live in an apartment infested with spiders, live in an apartment high off the ground, or live in an apartment with a small celing?"
 " A. Infested with spiders B. High off the ground C. Small ceiling")
