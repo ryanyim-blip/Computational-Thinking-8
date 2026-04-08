@@ -84,17 +84,17 @@ elif question1 == "":
     ("Please type your answer and A, B or C")
 
 if Fear_of_Spiders_points > Fear_of_Hights_points and Fear_of_Spiders_points > Fear_of_enclosed_spaces:
-    print("")
+    print("Looks like you have a fear of spiders or Arachnophobia.")
 elif Fear_of_Hights_points > Fear_of_Spiders_points and Fear_of_Hights_points > Fear_of_enclosed_spaces:
-    print("")
+    print("Alright, you have a fear of hights or acrophobia")
 elif Fear_of_enclosed_spaces > Fear_of_Spiders_points and Fear_of_enclosed_spaces > Fear_of_Hights_points:
-    print("")
+    print("your afraid of enclosed space or claustrophobia.")
 elif Fear_of_Spiders_points == Fear_of_Hights_points and Fear_of_Spiders_points > Fear_of_enclosed_spaces:
-    print("")
+    print("Well... you are afraid of spiders (Arachnophobia) and high hights (acrophobia) an equal amount... or at least on this test.")
 elif Fear_of_enclosed_spaces == Fear_of_Spiders_points and Fear_of_enclosed_spaces > Fear_of_Hights_points:
-    print("")
+    print("well... you are afraid of enclosed spaces (claustrophobia) and spiders (Arachnophobia) an equal amount... or at least on this test.")
 elif Fear_of_Hights_points == Fear_of_enclosed_spaces and Fear_of_Hights_points > Fear_of_Spiders_points:
-    print("")
+    print("well... you are afraid of and high hights (acrophobia) and enclosed spaces (claustrophobia) an equal amount... or at least on this test.")
 elif Fear_of_Spiders_points == Fear_of_Hights_points == Fear_of_enclosed_spaces:
-    print("")
+    print("That impossible... Your afraid of everything... alright im retiring.")
 
