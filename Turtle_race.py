@@ -23,9 +23,11 @@ t4 = create_sprite("baseball",x4,y4)
 
 # section 2.5 - prediction
 print("Hello, I want you to guess who will win")
-print("astronaut: 4*10-6+16+5÷11")
+print("astronaut: 4*10-6+16+5÷11+5")
+#equation answer is 10
 print("alien: ???")
 print("balloon: 8+8-5*7÷11")
+#equation answer is 7
 print("baseball: ∞")
 predict = input("please write who you think will win. 1. astronaut 2. alien 3. balloon 4. baseball")
 time.sleep(5)
@@ -34,9 +36,13 @@ time.sleep(5)
 # # TODO - explain here which sprites are faster or slower
 for i in range(40):
      x1 +=10
+     #astronaut moves 10
      x2 +=-5
+     #alien goes backwards
      y3 +=7
+     #instead of moving on the x axis, the balloon moves upwards on the y axis because its a balloon.
      x4 +=100
+     #baseball moves 100
 
      t1.goto(x1, y1)
      t2.goto(x2, y2)
