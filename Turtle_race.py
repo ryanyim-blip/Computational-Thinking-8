@@ -34,15 +34,16 @@ time.sleep(5)
 # # Section 3 - Racing
 # # TODO - set how much each variable changes by and increase the number of repeats to at least 30
 # # TODO - explain here which sprites are faster or slower
+#astronaut moves 10
+#alien goes backwards
+#instead of moving on the x axis, the balloon moves upwards on the y axis because its a balloon.
+#baseball moves 100
 for i in range(40):
+     
      x1 +=10
-     #astronaut moves 10
      x2 +=-5
-     #alien goes backwards
      y3 +=7
-     #instead of moving on the x axis, the balloon moves upwards on the y axis because its a balloon.
      x4 +=100
-     #baseball moves 100
 
      t1.goto(x1, y1)
      t2.goto(x2, y2)
