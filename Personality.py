@@ -18,70 +18,66 @@ elif question1 == "" or "yes":
     ("Please type your answer and A, B or C")
 question2 = input("would you rather live in an apartment infested with spiders, live in an apartment high off the ground, or live in an apartment with a small celing?"
 " A. Infested with spiders B. High off the ground C. Small ceiling")
-if question1 == "A": 
+if question2 == "A": 
     Fear_of_enclosed_spaces += 1
     Fear_of_Hights_points += 1
-elif question1 == "B":
+elif question2 == "B":
     Fear_of_enclosed_spaces += 1
     Fear_of_Spiders_points += 1
-elif question1 == "C":
+elif question2 == "C":
     Fear_of_Hights_points += 1
     Fear_of_Spiders_points += 1
-elif question1 == "":
+elif question2 == "":
     ("Please type your answer and A, B or C")
 
 question3 = input("would you rather have a pet taranchala, go to space for a day while witnessing the liftoff and landing, or weir a tight shirt"
 "A. pet taranchala B. go to space C. Tight shirt")
-if question1 == "A": 
+if question3 == "A": 
     Fear_of_enclosed_spaces += 1
     Fear_of_Hights_points += 1
-elif question1 == "B":
+elif question3 == "B":
     Fear_of_Spiders_points += 1
     Fear_of_enclosed_spaces += 1
-elif question1 == "C":
+elif question3 == "C":
     Fear_of_Hights_points += 1
     Fear_of_Spiders_points += 1
-elif question1 == "":
+elif question3 == "":
     ("Please type your answer and A, B or C")
 
-question4 = input("")
+question4 = input("what job would you want the least? A. cave diver, B. constructoin worker, C. arachnologist (study's spiders)")
 if question1 == "A": 
     Fear_of_enclosed_spaces += 1
+elif question4 == "B":
     Fear_of_Hights_points += 1
-elif question1 == "B":
+elif question4 == "C":
     Fear_of_Spiders_points += 1
-    Fear_of_enclosed_spaces += 1
-elif question1 == "C":
-    Fear_of_Hights_points += 1
-    Fear_of_Spiders_points += 1
-elif question1 == "":
+elif question4 == "":
     ("Please type your answer and A, B or C")
 
-question4 = input("")
-if question1 == "A": 
+question5 = input("Do spiders ever cause you to keep your distance? Yes or no.")
+if question5 == "yes": 
     Fear_of_Spiders_points += 1
-    Fear_of_Hights_points += 1
-elif question1 == "B":
-    Fear_of_enclosed_spaces += 1
-    Fear_of_Hights_points
-elif question1 == "C":
-    Fear_of_enclosed_spaces += 1
-    Fear_of_Spiders_points += 1
-elif question1 == "":
+elif question5 == "C":
+    Fear_of_Spiders_points += -1
+elif question5 == "":
     ("Please type your answer and A, B or C")
 
-question5 = input("")
-if question1 == "A": 
-    Fear_of_Spiders_points += 1
+question6 = input("if your have ever been on a high building, have you ever gotten anxious or stayed away from the edge?")
+if question6 == "yes": 
     Fear_of_Hights_points += 1
-elif question1 == "B":
-    Fear_of_enclosed_spaces += 1
-    Fear_of_Hights_points
-elif question1 == "C":
-    Fear_of_enclosed_spaces += 1
-    Fear_of_Spiders_points += 1
-elif question1 == "":
+elif question6 == "no":
+    Fear_of_Hights_points += -1
+elif question6 == "":
     ("Please type your answer and A, B or C")
+
+question7 = input("Do you ever get anxius if your underneath a bed without alot of room? Yes or no.")
+if question7 == "yes": 
+    Fear_of_enclosed_spaces += 1
+elif question7 == "no":
+    Fear_of_enclosed_spaces += -1
+elif question6 == "":
+    ("Please type your answer and A, B or C")
+
 
 if Fear_of_Spiders_points > Fear_of_Hights_points and Fear_of_Spiders_points > Fear_of_enclosed_spaces:
     print("Looks like you have a fear of spiders or Arachnophobia.")
